@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 bg-slate-900 text-white px-6">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-slate-900 text-white px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
           <span className="text-teal-400 font-mono text-sm tracking-wider uppercase">Welcome to my portfolio</span>
