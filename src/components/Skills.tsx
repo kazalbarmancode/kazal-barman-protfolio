@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   const skillCategories = [
@@ -40,7 +41,10 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillCategories.map((cat, idx) => (
-            <div key={idx} className="bg-slate-850 p-6 rounded-xl border border-slate-700/50 bg-slate-800/50">
+            <div 
+              key={idx} 
+              className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50"
+            >
               <h3 className="text-xl font-semibold text-teal-400 mb-6 border-b border-slate-700 pb-2">
                 {cat.category}
               </h3>
@@ -52,10 +56,13 @@ const Skills = () => {
                       <span className="text-teal-400">{skill.level}</span>
                     </div>
                     <div className="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
-                      <div
-                        className="bg-teal-400 h-full rounded-full transition-all duration-500"
-                        style={{ width: skill.level }}
-                      ></div>
+                      <motion.div
+                        className="bg-teal-400 h-full rounded-full"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: skill.level }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.2, delay: sIdx * 0.1, ease: "easeOut" }}
+                      ></motion.div>
                     </div>
                   </div>
                 ))}

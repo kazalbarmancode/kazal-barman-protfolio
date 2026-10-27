@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { BsArrowUp, BsGithub, BsTwitter } from 'react-icons/bs';
 import { LiaLinkedin } from 'react-icons/lia';
 
@@ -28,16 +29,16 @@ export default function Footer() {
           <h4 className="text-base font-semibold text-white">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#about" className="hover:text-white transition-colors">About</a>
+              <Link href="/about" className="hover:text-white transition-colors">About</Link>
             </li>
             <li>
-              <a href="#projects" className="hover:text-white transition-colors">Projects</a>
+              <Link href="/projects" className="hover:text-white transition-colors">Projects</Link>
             </li>
             <li>
               <a href="#skills" className="hover:text-white transition-colors">Skills</a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+              <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
             </li>
           </ul>
         </div>

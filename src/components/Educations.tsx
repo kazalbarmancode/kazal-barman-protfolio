@@ -3,15 +3,15 @@ import { FaGraduationCap } from 'react-icons/fa';
 
 const Education = () => {
   const educationData = [
-    {
-      degree: "B.Sc. in Computer Science / Higher Education",
-      institution: "Your University Name",
-      duration: "Running / Completed",
-      description: "Focusing on software engineering, data structures, algorithm design, and modern computing fundamentals."
-    },
+   {
+  degree: "Political Science",
+  institution: "Fulchari Govt. College",
+  duration: "2nd Year",
+  description: "Focusing on political theory, governance systems, international relations, and public administration."
+},
     {
       degree: "Higher Secondary Certificate (HSC)",
-      institution: "Your College Name",
+      institution: "UdaKhali Model Collage",
       duration: "Completed",
       description: "Science background with strong foundation in mathematics and technology."
     }

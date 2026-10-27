@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="p-3 bg-slate-900 text-teal-400 rounded-lg"><FaEnvelope /></div>
                 <div>
                   <p className="text-xs text-gray-400">Email</p>
-                  <p className="text-sm font-medium">kazalbarman@example.com</p>
+                  <p className="text-sm font-medium">kazal9010@gmail.com</p>
                 </div>
               </div>
 
@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="p-3 bg-slate-900 text-teal-400 rounded-lg"><FaPhoneAlt /></div>
                 <div>
                   <p className="text-xs text-gray-400">Phone / WhatsApp</p>
-                  <p className="text-sm font-medium">+880 17XXXXXXXX</p>
+                  <p className="text-sm font-medium">+880 1614173598</p>
                 </div>
               </div>
 

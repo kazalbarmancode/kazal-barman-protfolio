@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HeroPic from '../../public/FB_IMG_1772178297009.jpg'
+import HeroPic from '../../public/Kazal.jpeg'
 import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
@@ -32,10 +32,10 @@ const Hero = () => {
               <a href="https://github.com/kazalbarmancode" target="_blank" rel="noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 text-teal-400 rounded-lg transition">
                 <FaGithub className="text-xl" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 text-teal-400 rounded-lg transition">
+              <a href="https://www.linkedin.com/in/kazal-barman11" target="_blank" rel="noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 text-teal-400 rounded-lg transition">
                 <FaLinkedin className="text-xl" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 text-teal-400 rounded-lg transition">
+              <a href="https://www.facebook.com/share/14tMj8SQQD4/" target="_blank" rel="noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 text-teal-400 rounded-lg transition">
                 <FaFacebook className="text-xl" />
               </a>
             </div>
