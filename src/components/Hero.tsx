@@ -4,11 +4,10 @@ import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-[85vh] md:min-h-screen flex items-center justify-center bg-slate-900 text-white px-6 pt-24 pb-16 md:py-0">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+<section id="hero" className="py-10 md:py-20 flex items-center justify-center bg-slate-900 text-white px-6">     
+   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
         
-        {/* Left Column: Intro */}
-        <div className="space-y-6">
+        <div className="space-y-1">
           <span className="text-teal-400 font-mono text-sm tracking-wider uppercase">Welcome to my portfolio</span>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
             Hi, I am <span className="text-teal-400">Kazal Chandra Barman</span>
