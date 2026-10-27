@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { projectsData } from '@/data/ProjectsData';
+
+'use client'
 import { FaExternalLinkAlt, FaGithub, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
+import { useState } from 'react';
+import { projectsData } from '@/data/ProjectsData';
 
-// Project ডেটার জন্য TypeScript Interface
 interface Project {
   id: string;
   title: string;
@@ -26,7 +27,6 @@ const Projects: React.FC = () => {
           Featured <span className="text-teal-400">Projects</span>
         </h2>
 
-        {/* Project Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project: Project) => (
             <div 
@@ -60,7 +60,6 @@ const Projects: React.FC = () => {
           ))}
         </div>
 
-        {/* Modal for Project Details */}
         {selectedProject && (
           <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
             <div className="bg-slate-800 text-white rounded-2xl max-w-2xl w-full p-6 relative max-h-[90vh] overflow-y-auto border border-slate-700 shadow-2xl">

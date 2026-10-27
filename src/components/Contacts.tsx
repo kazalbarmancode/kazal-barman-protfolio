@@ -10,7 +10,6 @@ const Contact = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Contact Details */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Lets talk about everything!</h3>
             <p className="text-gray-400">
@@ -44,7 +43,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <form className="bg-slate-900 p-6 rounded-xl border border-slate-800 space-y-4">
             <div>
               <label className="text-sm text-gray-400">Your Name</label>
