@@ -1,17 +1,19 @@
 import Image from 'next/image';
-import HeroPic from '../../public/Kazal.jpeg'
+import HeroPic from '../../public/Kazal.jpeg';
 import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-slate-900 text-white px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section id="hero" className="min-h-[85vh] md:min-h-screen flex items-center justify-center bg-slate-900 text-white px-6 pt-24 pb-16 md:py-0">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+        
+        {/* Left Column: Intro */}
         <div className="space-y-6">
           <span className="text-teal-400 font-mono text-sm tracking-wider uppercase">Welcome to my portfolio</span>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
             Hi, I am <span className="text-teal-400">Kazal Chandra Barman</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-300 font-medium">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-medium">
             Full Stack Web Developer
           </h2>
           <p className="text-gray-400 text-base leading-relaxed">
@@ -42,17 +44,20 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Right Column: Profile Image */}
         <div className="flex justify-center">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-400/30 shadow-2xl">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-400/30 shadow-2xl">
             <Image
               src={HeroPic}
               alt="Kazal Chandra Barman" 
-              className="w-full h-full object-cover"
-              width={400}
-              height={300}
+              fill
+              sizes="(max-width: 768px) 100vw, 320px"
+              priority
+              className="object-cover"
             />
           </div>
         </div>
+
       </div>
     </section>
   );
